@@ -1,0 +1,225 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* header */
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+header .header-brand{
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center ;
+    padding: 20px 0; ;
+}
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0px 16px;
+}
+header nav ul li a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    line-height: 30px;
+    float: left;
+    margin: 0%;
+    text-transform: uppercase;
+}
+header .header-cases{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    header .header-brand{
+        margin: 31px 0;
+        text-align: left ;
+        line-height: 35px;
+        padding: 0px 20px 0px 40px; 
+        border-right: 3px solid #111;
+        float:left;
+    }
+    header nav ul{
+        margin: 0;
+        float: left;
+    }
+    header nav li a{
+        line-height: 90px !important;
+    }
+    header .header-cases{
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;    
+        color: #111;
+        text-transform: uppercase;
+        line-height: 35px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 31px ;
+        padding: 0 20px;
+    }
+    
+}
+
+
+/* Index */
+
+.index-banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('https://www.thecoderschool.com/blog/wp-content/uploads/2019/01/CodingMakesYouSmarter.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    
+}
+.index-text{
+    display: table-cell;
+    vertical-align:top;
+}
+
+.index-banner h1{
+    color: rgb(97, 94, 94);
+    font-family:Cormorant Garamond;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.index-banner h2{
+    color: #fff;
+    font-family: Cormorant Garamond ;
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.index-links div{
+    margin: 14px 14px 0;
+    width: calc(100% - 28px);
+    height: 70px;
+    background-color: #f6f6f6;
+}
+.index-links div h3{
+    font-family:Yanone Kaffeesatz;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media only screen and (min-width:1000px){
+      .wrapper{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    .index-banner{
+        height: 700px;
+        margin: 0 auto;
+    }
+    .index-banner h1{
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
+   
+    .index-links div{
+        margin: 15px 8px 0;
+        height: 175px;
+        background-color: #f6f6f6;
+        float: left;
+    }
+    .index-square{
+        width: calc(25% - 35px) !important; 
+
+    }
+    .index-rectangle{
+        width: calc(50% - 35px) !important;
+    }
+    .index-links{
+        
+        overflow: hidden;
+    }
+    .index-links div h3{
+        line-height: 135px;
+    }
+      
+}
+
+/* Footer */
+footer{
+    width: calc(100 - 80px);
+    padding: 40px ;
+    background-color: #111;
+    margin-top:20px ;
+    overflow: hidden;
+}
+footer ul {
+    width: fit-content;
+    float: left;    
+    padding-left: 20px;
+}
+footer ul li {
+  display: block;
+  font-family: Cormorant Garamond;
+  list-style: none;
+  color: #fff;
+}
+footer ul li a {
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+     
+}
+.footer-cases{
+    display: none;
+}
+.footer-sm{
+    width: 60px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px ;
+}
+@media only screen and (min-width:1000px){
+    .footer-cases{
+        display: block;
+    }
+    footer ul li p {
+        font-size: 24px;
+        font-family: Garamond;
+        font-weight: 600;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        text-transform: uppercase;
+    }
+
+}
